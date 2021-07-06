@@ -1,0 +1,11 @@
+{
+  "title": "NW仮想化教育・ハンズオン",
+  "description": "NW仮想化教育のハンズオンコースです。",
+  "courses": [
+    {
+      "course_id": "DockerHandsOn",
+      "title": "docker ハンズオン",
+      "description": "dockerの環境を構築し、コンテナを作成・動作させます。"
+    }
+  ]
+}
