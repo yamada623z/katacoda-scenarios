@@ -1,8 +1,8 @@
-# ステップ14：Dockerfile利用ビルド（コンテナイメージ生成）
+# Dockerfile利用ビルド（コンテナイメージ生成）
 Dockerイメージを作成する「docker build」コマンドは、「Dockerfile」ファイルの上から順番に処理が実行されます。  
 
-（書式）  
-docker build [-t ｛イメージ名｝[:｛タグ名｝]] ｛Dockerfileのあるディレクトリ｝  
+**（書式）**  
+docker build <span style="color: red; ">[-t ｛イメージ名｝[:｛タグ名｝]] ｛Dockerfileのあるディレクトリ｝</span>  
 
 「Dockerfile」ファイルが作成できたら、「docker build」コマンドでDockerコンテナーの起動、構成、Dockerイメージの作成まで一気に実行します。  
 「-t」オプションは作成するDockerイメージのイメージ名およびタグ名を指定します。  
@@ -11,7 +11,7 @@ $ `docker build -t webserver-image:v1 .`{{execute}}
 
 カレントディレクトリに「Dockerfile」が存在するため、Dockerfileのあるディレクトリは「.」を指定しています。 
 
-（表示例）
+**（表示例）**  
 ###### Sending build context to Docker daemon  3.072kB  
 ###### Step 1/2 : FROM nginx:alpine  
 ###### alpine: Pulling from library/nginx  

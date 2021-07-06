@@ -1,11 +1,11 @@
-# ステップ３：コンテナの起動（docker run）
+# コンテナの起動（docker run）
 Docker CLIには、Dockerイメージに基づいてコンテナを起動する「run」というコマンドがあります。 書式は「docker run <span style="color: red; ">options image-name</span>」です。  
 
 デフォルトでは、Dockerはフォアグラウンドでコマンドを実行します。 バックグラウンドで実行するには、オプション「-d」を指定する必要があります。  
 <br>
 $ `docker run -d nginx`{{execute}}  
 <br>
-（表示例）  
+**（表示例）**  
 ###### Unable to find image 'nginx:latest' locally  
 ###### latest: Pulling from library/nginx  
 ###### d121f8d1c412: Pull complete  
