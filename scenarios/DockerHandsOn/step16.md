@@ -12,6 +12,6 @@ docker run [オプション] ｛イメージ名｝[:｛タグ名｝]
 
 $ `docker run -d -p 80:80 webserver-image:v1`{{execute}}  
 
-*（表示例）*  
-*67bcb99e625ac1b2f7193a27901b2ae61481ee9470bdea0a9c957d6ca8a39e08*  
-*$*  
+（表示例）  
+###### 67bcb99e625ac1b2f7193a27901b2ae61481ee9470bdea0a9c957d6ca8a39e08  
+###### $  

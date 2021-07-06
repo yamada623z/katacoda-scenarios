@@ -4,6 +4,6 @@ Dockerで新たに作られたUbuntu環境のコンテナで「ps」コマンド
 
 $ `docker run ubuntu ps`{{execute}}  
 
-*（表示例）*  
-*PID &emsp; TTY &emsp; TIME &emsp; CMD*  
-*1 &emsp; ? &emsp; 00:00:00:00 &emsp; ps* 
+（表示例）  
+###### PID &emsp; TTY &emsp; TIME &emsp; CMD  
+###### 1 &emsp; ? &emsp; 00:00:00:00 &emsp; ps 
