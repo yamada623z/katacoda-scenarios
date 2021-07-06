@@ -8,6 +8,7 @@ $ `docker images`{{execute}}
 <span style="color: red; ">image-name</span>はリポジトリ名とタグの組み合わせです。  
 <span style="color: red; ">image-id</span>は「docker images」で確認することができます。  
 <br>
+（下記に習って入力してください。）  
 $ **docker rmi <span style="color: red; ">image-name</span> または <span style="color: red; ">image-id</span>**  
 <br>
 DockerイメージがDockerホストマシンから削除されたことを確認します。  
