@@ -20,8 +20,7 @@ $ `docker build -t webserver-image:v1 .`{{execute}}
 ###### b4bea01b9731: Pull complete  
 ###### 62c992d61d2c: Pull complete  
 ###### b675ffa804eb: Pull complete  
-###### Digest:  
-###### sha256:5fcbe9a6b09b6525651d1e5d5a2df373eec1a13c75f0eaa724a369f43ce589f4  
+###### Digest: sha256:5fcbe9a6b09b6525651d1e5d5a2df373eec1a13c75f0eaa724a369f43ce589f4  
 ###### Status: Downloaded newer image for nginx:alpine ---> bd53a8aa5ac9  
 ###### Step 2/2 : COPY ./index.html /usr/share/nginx/html ---> 0ba8ead98d17  
 ###### Successfully built 0ba8ead98d17  
