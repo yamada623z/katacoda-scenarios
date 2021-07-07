@@ -1,5 +1,5 @@
 # コンテナの動作確認
-コンテナの動作確認として「curl docker」を実行します。ステップ12で作成した「index.html」の内容が表示されます。    
+コンテナの動作確認として「curl localhost:80」を実行します。ステップ12で作成した「index.html」の内容が表示されます。    
 
 $ `curl localhost:80`{{execute}}  
 <br>
