@@ -5,7 +5,9 @@
 $ `docker run -it ubuntu /bin/bash`{{execute}}  
 
 **（表示例）**  
-###### root@5bde6b629564:/#  
-###### root@5bde6b629564:/# `exit`{{execute}}  
-###### exit  
-###### $  
+```
+root@5bde6b629564:/#  
+root@5bde6b629564:/# `exit`{{execute}}  
+exit  
+$  
+```

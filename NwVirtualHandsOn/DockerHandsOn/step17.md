@@ -4,7 +4,9 @@
 $ `curl localhost:80`{{execute}}  
 <br>
 **（表示例）**  
-```<h1>Hello World</h1>```
+```
+<h1>Hello World</h1>
+```
 
 **KatacodaのWebアクセス方法：**  
 ①ターミナルペインの「Terminal」のタグの隣の「＋」をクリックする。  

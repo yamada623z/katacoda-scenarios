@@ -4,9 +4,10 @@
 $ `docker ps`{{execute}}  
 <br>
 **（表示例）**  
-###### CONTAINER ID &emsp; IMAGE &emsp; COMMAND &emsp; CREATED &emsp; STATUS &emsp; PORTS &emsp; NAMES  
-###### <span style="color: red; ">d6ae8a871e8f</span> &emsp; nginx &emsp; "/docker-entrypoint.…" &emsp; 3 minutes ago &emsp; Up 3 minutes &emsp; 80/tcp &emsp; <span style="color: red; ">elegant_thompson</span>   
-<br>
+```
+CONTAINER ID	IMAGE	COMMAND			CREATED		STATUS		PORTS	NAMES  
+d6ae8a871e8f	nginx	"/docker-entrypoint.…" 3 minutes ago	Up 3 minutes	80/tcp	elegant_thompson
+```
 **（説明）**  
 
 「<span style="color: red; ">d6ae8a871e8f</span>」は コンテナID（container-id） です。  
