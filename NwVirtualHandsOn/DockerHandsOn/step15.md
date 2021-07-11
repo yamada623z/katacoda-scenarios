@@ -1,5 +1,5 @@
 # ローカルマシン上のコンテナイメージの確認
-作成されたDockerイメージを「docker image」コマンドで確認します。    
+作成されたDockerイメージを「**docker image**」コマンドで確認します。    
 
 $ `docker images`{{execute}}  
 

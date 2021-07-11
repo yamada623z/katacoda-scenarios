@@ -1,8 +1,8 @@
 # コンテナの起動（ポート割付）
-「docker run」コマンドは、DockerイメージからDockerコンテナを作成・実行します。  
+「**docker run**」コマンドは、DockerイメージからDockerコンテナを作成・実行します。  
 
 **（書式）**  
-docker run <span style="color: red; ">[オプション] ｛イメージ名｝[:｛タグ名｝]</span>  
+**docker run** <span style="color: red; ">[オプション] ｛イメージ名｝[:｛タグ名｝]</span>  
 
 <span style="color: red; ">「-d</span>」は、バックグラウンドでコンテナを実行するオプションです。  
 <span style="color: red; ">「-p ｛ホストのポート番号｝:｛コンテナーのポート番号｝」</span>のオプション指定で、Dockerホストマシンとポートマッピングを構成します。  

@@ -3,12 +3,12 @@
 
 ①rootにユーザを切り替える。
 
-$ sudo -s
+`$ sudo -s`
 
 ②dockerをインストールする。（ubuntuの場合）
 
-\# apt install docker.io
+`# apt install docker.io`
 
 ③システム起動時に起動するように設定する。
 
-\# systemctl docker
+`# systemctl docker`

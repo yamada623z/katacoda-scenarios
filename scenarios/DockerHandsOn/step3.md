@@ -1,10 +1,10 @@
 # コンテナの起動（docker run）
-Docker CLIには、Dockerイメージに基づいてコンテナを起動する「run」というコマンドがあります。 書式は「docker run <span style="color: red; ">options image-name</span>」です。  
+Docker CLIには、Dockerイメージに基づいてコンテナを起動する「**run**」というコマンドがあります。 書式は「**docker run** <span style="color: red; ">options image-name</span>」です。  
 
-デフォルトでは、Dockerはフォアグラウンドでコマンドを実行します。 バックグラウンドで実行するには、オプション「-d」を指定する必要があります。  
-<br>
+デフォルトでは、Dockerはフォアグラウンドでコマンドを実行します。 バックグラウンドで実行するには、オプション「<span style="color: red; ">-d</span>」を指定する必要があります。  
+
 $ `docker run -d nginx`{{execute}}  
-<br>
+
 **（表示例）**  
 ```
 Unable to find image 'nginx:latest' locally  
@@ -18,4 +18,4 @@ Digest: sha256:fc66cdef5ca33809823182c9c5d72ea86fd2cef7713cf3363e1a0b12a5d77500
 Status: Downloaded newer image for nginx:latest  
 D6ae8a871e8f6c7f93da21fd9fd79670a82e0a7a6f119ea3e94a29f96ac0439b  
 ```
-デフォルトでは、Dockerは利用可能な最新バージョンを実行します。 特定のバージョンが必要な場合は、タグとして指定できます。たとえば、バージョン1.17.7は「docker run -d <span style="color: red; ">nginx:1.17.7</span>」になります。
+デフォルトでは、Dockerは利用可能な最新バージョンを実行します。 特定のバージョンが必要な場合は、タグとして指定できます。たとえば、バージョン1.17.7は「**docker run -d** <span style="color: red; ">nginx:1.17.7</span>」になります。

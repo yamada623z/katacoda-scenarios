@@ -3,4 +3,4 @@ Nginxを実行するように構成されているDockerイメージの名前を
 
 $ `docker search nginx`{{execute}}
 
-コマンド「docker search <span style="color: red; ">name</span>」を使用して、既存のイメージを見つけることができます。 たとえば、Nginxのイメージを見つけるには、「docker search <span style="color: red; ">nginx</span>」を使用します。
+コマンド「**docker search** <span style="color: red; ">name</span>」を使用して、既存のイメージを見つけることができます。 たとえば、Nginxのイメージを見つけるには、「**docker search** <span style="color: red; ">nginx</span>」を使用します。

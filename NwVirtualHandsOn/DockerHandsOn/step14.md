@@ -1,11 +1,11 @@
 # Dockerfile利用ビルド（コンテナイメージ生成）
-Dockerイメージを作成する「docker build」コマンドは、「Dockerfile」ファイルの上から順番に処理が実行されます。  
+Dockerイメージを作成する「**docker build**」コマンドは、「Dockerfile」ファイルの上から順番に処理が実行されます。  
 
 **（書式）**  
-docker build <span style="color: red; ">[-t ｛イメージ名｝[:｛タグ名｝]] ｛Dockerfileのあるディレクトリ｝</span>  
+**docker build** <span style="color: red; ">[-t ｛イメージ名｝[:｛タグ名｝]] ｛Dockerfileのあるディレクトリ｝</span>  
 
-「Dockerfile」ファイルが作成できたら、「docker build」コマンドでDockerコンテナーの起動、構成、Dockerイメージの作成まで一気に実行します。  
-「-t」オプションは作成するDockerイメージのイメージ名およびタグ名を指定します。  
+「Dockerfile」ファイルが作成できたら、「**docker build**」コマンドでDockerコンテナーの起動、構成、Dockerイメージの作成まで一気に実行します。  
+「<span style="color: red; ">-t</span>」オプションは作成するDockerイメージのイメージ名およびタグ名を指定します。  
 
 $ `docker build -t webserver-image:v1 .`{{execute}}  
 
