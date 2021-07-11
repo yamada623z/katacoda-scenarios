@@ -6,7 +6,7 @@
       "course_id": "DockerHandsOn",
       "title": "docker ハンズオン",
       "description": "dockerの環境を構築し、コンテナを作成・動作させます。"
-    }
+    },
     {
       "course_id": "KubernetesHandsOn1",
       "title": "kubernetes ハンズオン①",
