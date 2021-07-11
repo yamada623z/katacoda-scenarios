@@ -15,9 +15,9 @@ spec:
 (省略）
   ports:
   - port: 443
-  protocol: TCP
-  targetPort: 8443
-  nodePort: 32002 <- nodePortを追加します（任意のポートを指定します。 例：32002）
+    protocol: TCP
+    targetPort: 8443
+    nodePort: 32002 <- nodePortを追加します（任意のポートを指定します。 例：32002）
 (省略)
   type: ClusterIP <- この行を削除し、下記の行「type: NodePort」を追加します。
   type: NodePort

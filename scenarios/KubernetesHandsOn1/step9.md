@@ -26,9 +26,9 @@ data:
   config: |
     address-pools:
     - name: default
-    protocol: layer2
-    addresses:
-    - 10.40.x.100-10.40.x.150
+      protocol: layer2
+      addresses:
+      - 10.40.x.100-10.40.x.150
 ```  
 末尾の行は環境に沿った値で設定します。（開始IPアドレス-終了IPアドレス）  
 
