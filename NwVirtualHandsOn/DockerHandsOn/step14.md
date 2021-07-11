@@ -9,7 +9,7 @@ Dockerイメージを作成する「**docker build**」コマンドは、「Dock
 
 $ `docker build -t webserver-image:v1 .`{{execute}}  
 
-カレントディレクトリに「Dockerfile」が存在するため、Dockerfileのあるディレクトリは「.」を指定しています。 
+カレントディレクトリに「Dockerfile」が存在するため、Dockerfileのあるディレクトリは「<span style="color: red; ">.</span>」を指定しています。 
 
 **（表示例）**  
 ```

@@ -6,7 +6,7 @@
 
 <span style="color: red; ">「-d</span>」は、バックグラウンドでコンテナを実行するオプションです。  
 <span style="color: red; ">「-p ｛ホストのポート番号｝:｛コンテナーのポート番号｝」</span>のオプション指定で、Dockerホストマシンとポートマッピングを構成します。  
-「nginx」は80番ポートを常時Listenするコンテナです。Dockerホストマシンとポートマッピングすることにより、Dockerホストマシンの80番ポートで入力を受け付けます。  
+「nginx」は<span style="color: red; ">80</span>番ポートを常時Listenするコンテナです。Dockerホストマシンとポートマッピングすることにより、Dockerホストマシンの<span style="color: red; ">80</span>番ポートで入力を受け付けます。  
 
 <span style="color: red; ">｛イメージ名｝[:｛タグ名｝]</span>には、Step14で作成したコンテナイメージを指定します。
 

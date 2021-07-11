@@ -9,5 +9,5 @@ $ `curl localhost:80`{{execute}}
 ```
 
 **KatacodaのWebアクセス方法：**  
-①ターミナルペインの「Terminal」のタグの隣の「＋」をクリックする。  
-②表示されるドロップリストから「View HTTP port 80 on Host 1」をクリックする。
+①ターミナルペインの「**Terminal**」のタグの隣の「**＋**」をクリックする。  
+②表示されるドロップリストから「**View HTTP port 80 on Host 1**」をクリックする。
