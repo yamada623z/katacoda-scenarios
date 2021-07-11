@@ -7,6 +7,7 @@ Podの状態からダッシュボードのみを表示します。
 \# `kubectl get pods --all-namespaces | grep dashboard`{{execute HOST1}}  
 
 ダッシュボードの定義ファイルを編集します。  
+\# `kubectl -n kubernetes-dashboard edit service kubernetes-dashboard`{{execute HOST1}}  
 
 ```
 (省略）
