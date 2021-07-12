@@ -1,7 +1,7 @@
 # ダッシュボードの実装とアクセス
 **<span style="color: red; ">（masterノードで実施（HOST 1））</span>**  
 
-下記の手順でダッシュボードへのアクセスの為の証明書を作成します。  
+①下記の手順でダッシュボードへのアクセスの為の証明書を作成します。  
 
 $ `mkdir $HOME/certs`{{execute HOST1}}  
 
@@ -14,7 +14,7 @@ $ `openssl req -new -key dashboard.key > dashboard.csr`{{execute HOST1}}
 
 $ `openssl x509 -days 3650 -req -signkey dashboard.key < dashboard.csr > dashboard.crt`{{execute HOST1}}  
 
-作成した証明書からsecretを作ります。  
+②作成した証明書からsecretを作ります。  
 
 $ `kubectl create secret generic kubernetes-dashboardcerts --from-file=$HOME/certs -n kube-system`{{execute HOST1}}  
 
@@ -23,11 +23,11 @@ $ `kubectl create secret generic kubernetes-dashboardcerts --from-file=$HOME/cer
 secret/kubernetes-dashboard-certs created
 ```  
 
-ダッシュボードをPodとして、クラスターに実装します。  
+③ダッシュボードをPodとして、クラスターに実装します。  
 $ `kubectl apply -f https://raw.githubusercontent.com/kubernetes/dashboard/v2.0.0-beta8/aio/deploy/recommended.yaml`{{execute HOST1}}  
 <br>
 
-クラスターの状況を確認します。  
+④クラスターの状況を確認します。  
 
 $ `kubectl cluster-info`{{execute HOST1}}  
 **（表示）**  
@@ -37,7 +37,7 @@ KubeDNS is running at
 https://10.40.x.1:6443/api/v1/namespaces/kubesystem/services/kube-dns:dns/proxy
 ```  
 
-**<span style="color: red; ">（※下記のコマンドは本レッスンでは必要ありません。）</span>**
+<u>**<span style="color: red; ">※下記のコマンドは本レッスンでは必要ありません。</span>**</u>
 
 本レッスンでは必要ありませんが、実ノードでは「**kubectl proxy**」を起動し、ブラウザでアクセスすることができます。  
 

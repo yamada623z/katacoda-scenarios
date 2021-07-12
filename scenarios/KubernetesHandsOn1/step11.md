@@ -3,13 +3,14 @@
 
 masterノードのポートを使用して、外部ノードからアクセス出来るようにします。  
 
-Podの状態からダッシュボードのみを表示します。  
+①Podの状態からダッシュボードのみを表示します。  
 \# `kubectl get pods --all-namespaces | grep dashboard`{{execute HOST1}}  
+<br>
 
-ダッシュボードの定義ファイルを編集します。  
+②ダッシュボードの定義ファイルを編集します。  
 \# `kubectl -n kubernetes-dashboard edit service kubernetes-dashboard`{{execute HOST1}}  
 
-```
+```yaml
 (省略）
 spec:
 (省略）
@@ -23,7 +24,7 @@ spec:
   type: NodePort
 (省略)
 ```  
-サービスの状態を取得し、確認します。  
+③サービスの状態を取得し、確認します。  
 
 \# `kubectl get svc --all-namespaces`{{execute HOST1}}  
 
@@ -31,10 +32,11 @@ spec:
 ```
 kube-system kubernetes-dashboard    NodePort    10.111.163.244  <none>      443:32002/TCP   16m
 ```
-ポート：32002で表示を確認します。  
+④ポート：32002で表示を確認します。  
 
-ブラウザからのアクセスは以下の通り。（「10.40.x.10」はmasterノードのIPアドレスです。）  
+ブラウザからのアクセスは以下の通り。（例：「10.40.x.10」はmasterノードのIPアドレスです。）  
 `https://10.40.x.10:32002`  
+<br>
 
 **KatacodaのWebアクセス方法：**  
 ①ターミナルペインの「**Terminal Host 1**」のタグの隣の「**＋**」をクリックする。  

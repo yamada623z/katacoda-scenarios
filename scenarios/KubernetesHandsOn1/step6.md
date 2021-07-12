@@ -1,5 +1,5 @@
 # kubeadmのインストール（workerノード）  
-**<span style="color: red; ">（※このステップは本レッスンでは必要ありません。）</span>**
+<u>**<span style="color: red; ">※このステップは本レッスンでは必要ありません。</span>**</u>
 
 **<span style="color: red; ">（workerノードで実施（HOST 2））</span>**  
 

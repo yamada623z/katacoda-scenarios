@@ -1,5 +1,5 @@
 # kubeadmのインストール（masterノード）  
-**<span style="color: red; ">（※このステップは本レッスンでは必要ありません。）</span>**  
+<u>**<span style="color: red; ">※このステップは本レッスンでは必要ありません。</span>**</u>  
 
 **<span style="color: red; ">（masterノードで実施（HOST 1））</span>**  
 

@@ -1,5 +1,5 @@
 # ロードバランサー機能の実装
-**<span style="color: red; ">（※このステップは本レッスンでは必要ありません。）</span>**
+<u>**<span style="color: red; ">※このステップは本レッスンでは必要ありません。</span>**</u>
 
 本レッスンでは必要ありませんが、ロードバランサー機能はパブリッククラウドには標準で実装されていますが、オンプレミスでは下記のように機能を追加して実装します。
 
@@ -16,7 +16,7 @@
 ③ConfigMapファイル（設定を記述します）の作成します。  
 
 \# `vi metallb_conf.yaml`
-```
+```yaml
 apiVersion: v1
 kind: ConfigMap
 metadata:

@@ -24,7 +24,7 @@ Data
 ca.crt: 1115 bytes
 namespace: 11 bytes
 token: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
-```
-「**token:**」以降の文字列（xxxxの部分）をマウスで選択し、コピーします。   
-③ダッシュボードのラジオボタン「**Token**」をチェックし、下段の「**Enter token**」に②でコピーした文字列をペーストして「**SIGN In**」ボタンをクリックします。  
+```  
+③上記の「**token:**」以降の文字列（xxxxの部分）をマウスで選択し、コピーします。   
+④ダッシュボードのラジオボタン「**トークン**」をチェックし、下段の「**トークンを入力**」に②でコピーした文字列をペーストして「**サインイン**」ボタンをクリックします。  
 
