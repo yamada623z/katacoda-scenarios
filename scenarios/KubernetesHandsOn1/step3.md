@@ -15,7 +15,7 @@ Your Kubernetes master has initialized successfully!
  To start using your cluster, you need to run the following as a regular user:
  ```
  *「クラスターの使用を開始するには、通常のユーザーとして次を実行する必要があります。」*  
-<span style="color: red; ">**※1 下記のコマンドを表示通りに実行します。（②で実施します。**</span>
+<span style="color: red; ">※ 下記のコマンドを表示通りに実行します。（②で実施します。）</span>
  ```
     mkdir -p $HOME/.kube
     sudo cp -i /etc/kubernetes/admin.conf $HOME/.kube/config
@@ -28,7 +28,7 @@ Your Kubernetes master has initialized successfully!
     https://kubernetes.io/docs/concepts/clusteradministration/addons/
 ```
 *「ここで、ポッドネットワークをクラスターにデプロイする必要があります」*   
-<span style="color: red; ">**※2 CNI（Contena Network Intarface）のインストールします（Step4で実施します。）**</span>  
+<span style="color: red; ">※ CNI（Contena Network Intarface）のインストールします（Step4で実施します。）</span>  
 ```
 You can now join any number of machines by running the following on each node
 as root:

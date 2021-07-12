@@ -5,7 +5,7 @@
 
 **<span style="color: red; ">（workerノードで実施（HOST 2））</span>**  
 
-①ホスト名の変更します。**<span style="color: red; ">（※”_”,”-”はホスト名に使えない。）</span>**  
+①ホスト名の変更します。<span style="color: red; ">（※”_”,”-”はホスト名に使えない。）</span>  
 
 $ `sudo hostnamectl set-hostname worker1`  
 
