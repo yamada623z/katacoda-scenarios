@@ -30,7 +30,7 @@ spec:
 
 **（表示例）**
 ```
-kube-system kubernetes-dashboard    NodePort    10.111.163.244  <none>      443:32002/TCP   16m
+kubernetes-dashboard  kubernetes-dashboard    NodePort    10.111.163.244  <none>      443:32002/TCP   16m
 ```
 ④ポート：32002で表示を確認します。  
 
