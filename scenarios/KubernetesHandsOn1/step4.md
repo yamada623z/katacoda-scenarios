@@ -4,7 +4,7 @@
 ①**CNI（Contena Network Intarface）** のインストールのためのYAMLファイルのダウン
 ロードを実施します。(今回はCNIに「weave」を使用します)  
 
-$ `wget https://cloud.weave.works/k8s/v1.14/net.yaml`{{execute HOST1}}  
+$ `wget https://cloud.weave.works/k8s/v1.18/net.yaml`{{execute HOST1}}  
 
 ②CNIをkubernetes上にインストールします。  
 
