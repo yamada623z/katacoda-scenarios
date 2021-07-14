@@ -34,7 +34,7 @@ You can now join any number of machines by running the following on each node
 as root:
 ```
 *「各ノードで次を実行することで、任意の数のマシンに参加できるようになりました。」「ルートで：」*  
-※workerノードを追加する際には、下記の**kubeadm join**を実施します。（Step7で実施します。）
+<span style="color: red; ">※workerノードを追加する際には、下記の**kubeadm join**を実施します。（Step7で実施します。）</span>  
 ```
 kubeadm join xxx.xxx.xxx.xxx:6443 --token
 xxxxxx.xxxxxxxxxxxxx --discovery-token-ca-cert-hash sha256:xxxxxxx

@@ -24,7 +24,7 @@ secret/kubernetes-dashboard-certs created
 ```  
 
 ③ダッシュボードをPodとして、クラスターに実装します。  
-$ `kubectl apply -f https://raw.githubusercontent.com/kubernetes/dashboard/v2.0.0-beta8/aio/deploy/recommended.yaml`{{execute HOST1}}  
+$ `kubectl apply -f https://raw.githubusercontent.com/kubernetes/dashboard/v2.0.3/aio/deploy/recommended.yaml`{{execute HOST1}}  
 <br>
 
 ④クラスターの状況を確認します。  
