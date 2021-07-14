@@ -1,5 +1,5 @@
 # ダッシュボードの認証方法
-**<span style="color: red; ">（masterノードで実施（HOST 1））</span>**  
+**<span style="color: red; ">【masterノードで実施（HOST 1）】</span>**  
 
 ダッシュボードをtokenで認証し、ログインします。  
 
@@ -26,5 +26,5 @@ namespace: 11 bytes
 token: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
 ```  
 ③上記の「**token:**」以降の文字列（xxxxの部分）をマウスで選択し、コピーします。   
-④ダッシュボードのラジオボタン「**トークン**」をチェックし、下段の「**トークンを入力**」に②でコピーした文字列をペーストして「**サインイン**」ボタンをクリックします。  
+④現在、ダッシュボードに表示されている「Kubernetes Dashboard」のウインドウ上のラジオボタン「**トークン**」をチェックし、下段の「**トークンを入力**」に②でコピーした文字列をペーストして「**サインイン**」ボタンをクリックします。  
 

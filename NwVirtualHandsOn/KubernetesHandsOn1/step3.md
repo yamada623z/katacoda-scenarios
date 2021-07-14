@@ -1,10 +1,10 @@
 # クラスターの生成（kubeadm init）
-**<span style="color: red; ">（masterノードで実施（HOST 1））</span>**  
+**<span style="color: red; ">【masterノードで実施（HOST 1）】</span>**  
 
 ①kubernetesの構築を行います。
 （使用するCNIによって「--pod-network-cidr」の指定が必要です。）  
 
-\# `kubeadm init`{{execute HOST1}}  
+\$ `kubeadm init`{{execute HOST1}}  
 
 **（以下はkubeadm init実行後の表示例）**
 ```
@@ -34,9 +34,9 @@ You can now join any number of machines by running the following on each node
 as root:
 ```
 *「各ノードで次を実行することで、任意の数のマシンに参加できるようになりました。」「ルートで：」*  
-※workerノードを追加する際には、下記の**kubeadm join**を実施します。
+※workerノードを追加する際には、下記の**kubeadm join**を実施します。（Step7で実施します。）
 ```
-kubeadm join 10.40.x.10:6443 --token
+kubeadm join xxx.xxx.xxx.xxx:6443 --token
 xxxxxx.xxxxxxxxxxxxx --discovery-token-ca-cert-hash sha256:xxxxxxx
 ```  
 <br>

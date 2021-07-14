@@ -1,7 +1,7 @@
 # kubeadmのインストール（workerノード）  
 <u>**<span style="color: red; ">※このステップは本レッスンでは必要ありません。</span>**</u>
 
-**<span style="color: red; ">（workerノードで実施（HOST 2））</span>**  
+**<span style="color: red; ">【workerノードで実施（HOST 2）】</span>**  
 
 ⑥apt-transport-httpsのインストールは念のため実施します。  
 
@@ -13,7 +13,7 @@
 \# `apt-add-repository “deb http://apt.kubernetes.io/kubernetes-xenial main"`  
 
 ⑧スワップをオフにします。  
-<span style="color: red; ">※恒久的にswapoffにする必要あります。（/etc/fstabのswap行をコメントアウトします）</span>  
+<span style="color: red; ">※恒久的にswapoffにする必要があります。（/etc/fstabのswap行をコメントアウトします）</span>  
 
 \# `swapoff -a`  
 

@@ -1,14 +1,14 @@
 # ダッシュボードの外部ノードからアクセス
-**<span style="color: red; ">（masterノードで実施（HOST 1））</span>**  
+**<span style="color: red; ">【masterノードで実施（HOST 1）】</span>**  
 
 masterノードのポートを使用して、外部ノードからアクセス出来るようにします。  
 
 ①Podの状態からダッシュボードのみを表示します。  
-\# `kubectl get pods --all-namespaces | grep dashboard`{{execute HOST1}}  
+\$ `kubectl get pods --all-namespaces | grep dashboard`{{execute HOST1}}  
 <br>
 
 ②ダッシュボードの定義ファイルを編集します。  
-\# `kubectl -n kubernetes-dashboard edit service kubernetes-dashboard`{{execute HOST1}}  
+\$ `kubectl -n kubernetes-dashboard edit service kubernetes-dashboard`{{execute HOST1}}  
 
 ```yaml
 (省略）
@@ -26,20 +26,20 @@ spec:
 ```  
 ③サービスの状態を取得し、確認します。  
 
-\# `kubectl get svc --all-namespaces`{{execute HOST1}}  
+\$ `kubectl get svc --all-namespaces`{{execute HOST1}}  
 
 **（表示例）**
 ```
-kubernetes-dashboard  kubernetes-dashboard    NodePort    10.111.163.244  <none>      443:32002/TCP   16m
+kubernetes-dashboard  kubernetes-dashboard    NodePort    yyy.yyy.yyy.yyy  <none>      443:32002/TCP   16m
 ```
 ④ポート：32002で表示を確認します。  
 
-ブラウザからのアクセスは以下の通り。（例：「10.40.x.10」はmasterノードのIPアドレスです。）  
-`https://10.40.x.10:32002`  
+ブラウザからのアクセスは以下の通り。（例：「xxx.xxx.xxx.xxx」はmasterノードのIPアドレスです。）  
+`https://xxx.xxx.xxx.xxx:32002`  
 <br>
 
 **KatacodaのWebアクセス方法：**  
-①ターミナルペインの「**Terminal Host 1**」のタグの隣の「**＋**」をクリックする。  
-②表示されるドロップリストから「**Select port to view on Host 1**」をクリックする。  
-③ボックスに「**32002**」を入力し、「**Display Port**」します。  
+①ターミナルペインの「**Terminal Host 1**」のタグの隣の「**＋**」をクリックします。  
+②表示されるドロップリストから「**Select port to view on Host 1**」をクリックします。  
+③ボックスに「**32002**」を入力し、「**Display Port**」クリックします。  
 

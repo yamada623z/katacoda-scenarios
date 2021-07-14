@@ -1,5 +1,5 @@
 # ダッシュボードの実装とアクセス
-**<span style="color: red; ">（masterノードで実施（HOST 1））</span>**  
+**<span style="color: red; ">【masterノードで実施（HOST 1）】</span>**  
 
 ①下記の手順でダッシュボードへのアクセスの為の証明書を作成します。  
 
@@ -32,9 +32,9 @@ $ `kubectl apply -f https://raw.githubusercontent.com/kubernetes/dashboard/v2.0.
 $ `kubectl cluster-info`{{execute HOST1}}  
 **（表示）**  
 ```
-Kubernetes master is running at https://10.40.x.1:6443
+Kubernetes master is running at https://xxx.xxx.xxx.xxx:6443
 KubeDNS is running at
-https://10.40.x.1:6443/api/v1/namespaces/kubesystem/services/kube-dns:dns/proxy
+https://xxx.xxx.xxx.xxx:6443/api/v1/namespaces/kubesystem/services/kube-dns:dns/proxy
 ```  
 
 <u>**<span style="color: red; ">※下記のコマンドは本レッスンでは必要ありません。</span>**</u>

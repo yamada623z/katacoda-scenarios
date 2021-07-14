@@ -3,9 +3,14 @@
 - kubernetesの環境（masterノード）を構築する。  
 - workerノードを1台作成し、 kubernetesの環境（クラスタ）に追加する。  
 - kubernetesの環境（masterノード）にダッシュボードを実装する。  
+
+<span style="color: red; ">※Katacoda利用のハンズオンの場合、必ずブラウザはChromeを使用すること。</span>  
 <br>
-## （必要条件）
-実ノードでの必要条件は以下の通り。（参考：https://kubernetes.io/ja/docs/setup/independent/install-kubeadm/）  
+
+## 【必要条件】
+実ノードでの必要条件は以下の通り。  
+（参考：https://kubernetes.io/ja/docs/setup/independent/install-kubeadm/）  
+
 - 次のいずれかを実行する1つ以上のマシン：  
     - Ubuntu 16.04+  
     - Debian 9  
@@ -20,5 +25,3 @@
 - 各ノードの一意のホスト名、MACアドレス、およびproduct_uuid （カーネルによって生成されるシステム固有のID）  
 - マシンで特定のポートが開いている。  
 - スワップは無効です。kubeletが正常に機能するには、スワップを無効にする必要があります。  
-<br>
-<span style="color: red; ">※Katacoda利用のハンズオンの場合、必ずブラウザはChromeを使用すること。</span>  

@@ -1,7 +1,7 @@
 # kubeadmのインストール（masterノード）  
 <u>**<span style="color: red; ">※このステップは本レッスンでは必要ありません。</span>**</u>  
 
-**<span style="color: red; ">（masterノードで実施（HOST 1））</span>**  
+**<span style="color: red; ">【masterノードで実施（HOST 1）】</span>**  
 
 ⑥apt-transport-httpsのインストールは念のため実施します。  
 
