@@ -1,5 +1,5 @@
 # ダッシュボードの認証方法
-**<span style="color: red; ">【masterノードで実施（HOST 1）】</span>**  
+**<span style="color: red; ">【masterノードで実施（Terminal Host 1）】</span>**  
 
 ダッシュボードをtokenで認証し、ログインします。  
 

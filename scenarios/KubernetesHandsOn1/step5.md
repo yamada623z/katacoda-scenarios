@@ -3,7 +3,7 @@
 
 本レッスンでは必要ありませんが、Kubernetesクラスター環境を動作させる実workerノードでは下記の手順（①~⑨）で**kubeadm**をインストール必要があります。
 
-**<span style="color: red; ">【workerノードで実施（HOST 2）】</span>**  
+**<span style="color: red; ">【workerノードで実施】</span>**  
 
 ①ホスト名の変更します。<span style="color: red; ">（※”_”,”-”はホスト名に使えないので注意です。）</span>  
 

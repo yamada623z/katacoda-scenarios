@@ -1,7 +1,7 @@
 # kubeadmのインストール（workerノード）  
 <u>**<span style="color: red; ">※このステップは本レッスンでは必要ありません。</span>**</u>
 
-**<span style="color: red; ">【workerノードで実施（HOST 2）】</span>**  
+**<span style="color: red; ">【workerノードで実施】</span>**  
 
 ⑥apt-transport-httpsのインストールは念のため実施します。  
 

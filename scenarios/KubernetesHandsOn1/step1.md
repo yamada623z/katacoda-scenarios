@@ -3,7 +3,7 @@
 
 本レッスンでは必要ありませんが、Kubernetesクラスター環境を動作させる実masterノードでは下記の手順（①~⑨）で**kubeadm**をインストール必要があります。  
 
-**<span style="color: red; ">【masterノードで実施（HOST 1）】</span>**  
+**<span style="color: red; ">【masterノードで実施】</span>**  
 
 **kubeadm**はKubernetesクラスター環境を高速に作成する方法として**kubeadm init**と**kubeadm join**というコマンドを提供するツールです。Kubernetesのクラスターを立ち上げ、稼働させる上で最低限必要なものを提供します。  
 <br>

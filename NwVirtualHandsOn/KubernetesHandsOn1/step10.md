@@ -1,5 +1,5 @@
 # ダッシュボードの実装とアクセス
-**<span style="color: red; ">【masterノードで実施（HOST 1）】</span>**  
+**<span style="color: red; ">【masterノードで実施（Terminal Host 1）】</span>**  
 
 ①下記の手順でダッシュボードへのアクセスの為の証明書を作成します。  
 

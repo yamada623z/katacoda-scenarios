@@ -1,10 +1,10 @@
 # クラスターの生成（kubeadm init）
-**<span style="color: red; ">【masterノードで実施（HOST 1）】</span>**  
+**<span style="color: red; ">【masterノードで実施（Terminal Host 1）】</span>**  
 
 ①kubernetesの構築を行います。
 （使用するCNIによって「--pod-network-cidr」の指定が必要です。）  
 
-\$ `kubeadm init`{{execute HOST1}}  
+$ `kubeadm init`{{execute HOST1}}  
 
 **（以下はkubeadm init実行後の表示例）**
 ```
