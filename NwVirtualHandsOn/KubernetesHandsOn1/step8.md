@@ -9,6 +9,6 @@ $ `kubectl get nodes`{{execute HOST1}}
 ```  
 $ kubectl get nodes
 NAME           STATUS   ROLES    AGE   VERSION
-controlplane   Ready    master   84s   v1.14.0
-node01         Ready    <none>   24s   v1.14.0
+controlplane   Ready    master   84s   v1.18.0
+node01         Ready    <none>   24s   v1.18.0
 ```  

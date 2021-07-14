@@ -41,5 +41,5 @@ kubernetes-dashboard  kubernetes-dashboard    NodePort    yyy.yyy.yyy.yyy  <none
 **KatacodaのWebアクセス方法：**  
 ①ターミナルペインの「**Terminal Host 1**」のタグの隣の「**＋**」をクリックします。  
 ②表示されるドロップリストから「**Select port to view on Host 1**」をクリックします。  
-③ボックスに「**32002**」を入力し、「**Display Port**」クリックします。  
+③ボックスに「**32002**」を入力し、「**Display Port**」をクリックします。  
 
