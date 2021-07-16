@@ -9,7 +9,7 @@ Podを作成するためにmanifestファイル（nginxphp_pod.yaml）を作成�
 $ `cd`{{execute HOST1}}  
 $ `vi nginxphp_pod.yaml`{{execute HOST1}}  
 
-```yaml
+```yaml  
 apiVersion: v1
 kind: Service           #サービスを定義
 metadata:
@@ -49,4 +49,4 @@ spec:
         image: xxx.xxx.xxx.xxx:5000/myphpfpm:1.0
         ports:
         - containerPort: 9000   #コンテナにアクセスされるポート番号
-```
+```  

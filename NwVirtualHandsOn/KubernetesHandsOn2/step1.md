@@ -6,11 +6,11 @@
 
 ①rootにユーザを切り替えます。  
 
-$ `sudo -s`{execute HOST1}
+$ `sudo -s`{execute HOST1}  
 
 ②カレントのフォルダにある「daemon.json」の「"insecure-registries"」の行を編集し、「/etc/docker」に配置します。（「xxx.xxx.xxx.xxx」はregistryノードのIPアドレスを指定します）  
 
-\# `vi daemon.json`{execute HOST1}
+\# `vi daemon.json`{execute HOST1}  
 
 ```json
 {
@@ -18,7 +18,7 @@ $ `sudo -s`{execute HOST1}
 }
 ```
 
-\# `cp daemon.json /etc/docker`{execute HOST1}
+\# `cp daemon.json /etc/docker`{execute HOST1}  
 
 ③dockerを再起動します。（「daemon.json」ファイルの反映）  
 
@@ -33,11 +33,11 @@ $ `sudo -s`{execute HOST1}
 
 ④rootにユーザを切り替えます。  
 
-$ `sudo -s`{execute HOST2}
+$ `sudo -s`{execute HOST2}  
 
 ②カレントのフォルダにある「daemon.json」の「"insecure-registries"」の行を編集し、「/etc/docker」に配置します。（「xxx.xxx.xxx.xxx」はregistryノードのIPアドレスを指定します）  
 
-\# `vi daemon.json`{execute HOST2}
+\# `vi daemon.json`{execute HOST2}  
 
 ```json
 {
@@ -45,7 +45,7 @@ $ `sudo -s`{execute HOST2}
 }
 ```
 
-\# `cp daemon.json /etc/docker`{execute HOST2}
+\# `cp daemon.json /etc/docker`{execute HOST2}  
 
 ⑥dockerを再起動します。（「daemon.json」ファイルの反映）  
 
@@ -60,12 +60,12 @@ $ `sudo -s`{execute HOST2}
 
 ⑦「launch.sh」を実行してください。  
 
-$ `launch.sh`{execute HOST1}
+$ `launch.sh`{execute HOST1}  
 <br>
 
 ⑧ノード状態を確認し、クラスターの正常性を確認します。  
 
-$ `kubectl get nodes`{execute HOST1}
+$ `kubectl get nodes`{execute HOST1}  
 
 **（表示例）**  
 ```  
