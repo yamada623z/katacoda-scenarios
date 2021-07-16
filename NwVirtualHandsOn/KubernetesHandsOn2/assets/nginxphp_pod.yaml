@@ -8,7 +8,7 @@ spec:
   ports:
   - port: 80
     targetPort: 80
-    nodePort: 31010
+    nodePort: 31001
     protocol: TCP
   selector:
     app: nginx
@@ -29,10 +29,10 @@ spec:
     spec:
       containers:
       - name: nginx
-        image: 100.26.37.168:5000/mynginx:1.0
+        image: xxx.xxx.xxx.xxx:5000/mynginx:1.0
         ports:
         - containerPort: 80
       - name: phpfpm
-        image: 100.26.37.168:5000/myphpfpm:1.0
+        image: xxx.xxx.xxx.xxx:5000/myphpfpm:1.0
         ports:
         - containerPort: 9000

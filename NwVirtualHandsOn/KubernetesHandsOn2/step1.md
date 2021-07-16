@@ -6,7 +6,7 @@
 
 ①rootにユーザを切り替えます。  
 
-\# `sudo -s`{execute HOST1}
+$ `sudo -s`{execute HOST1}
 
 ②カレントのフォルダにある「daemon.json」の「"insecure-registries"」の行を編集し、「/etc/docker」に配置します。（「xxx.xxx.xxx.xxx」はregistryノードのIPアドレスを指定します）  
 
@@ -23,13 +23,17 @@
 ③dockerを再起動します。（「daemon.json」ファイルの反映）  
 
 \# `systemctl restart docker`{execute HOST1}  
+
+（一般ユーザに戻します）  
+
+\# `exit`{execute HOST1}  
 <br>
 
 **<span style="color: red; ">【workerノードで実施（Terminal Host 2）】</span>**  
 
 ④rootにユーザを切り替えます。  
 
-\# `sudo -s`{execute HOST2}
+$ `sudo -s`{execute HOST2}
 
 ②カレントのフォルダにある「daemon.json」の「"insecure-registries"」の行を編集し、「/etc/docker」に配置します。（「xxx.xxx.xxx.xxx」はregistryノードのIPアドレスを指定します）  
 
@@ -41,11 +45,15 @@
 }
 ```
 
-\# `cp daemon.json /etc/docker`{execute HOST1}
+\# `cp daemon.json /etc/docker`{execute HOST2}
 
 ⑥dockerを再起動します。（「daemon.json」ファイルの反映）  
 
-\# `systemctl restart docker`{execute HOST1}  
+\# `systemctl restart docker`{execute HOST2}  
+
+（一般ユーザに戻します）  
+
+\# `exit`{execute HOST2}  
 <br>
 
 **<span style="color: red; ">【masterノードで実施（Terminal Host 1）】</span>**  
@@ -86,4 +94,3 @@ $ `ls -la`{execute HOST1}
 -rw-r--r--  1 root root    37 Apr 27 02:09 test.php
 -rw-r--r--  1 root root   217 Apr 27 02:09 www.conf
 ```
-

@@ -10,7 +10,12 @@
     {
       "course_id": "KubernetesHandsOn1",
       "title": "kubernetes ハンズオン①",
-      "description": "kubernetesの環境を構築し、クラスタを構成します。"
+      "description": "kubernetesの環境を構築し、クラスターを構成します。"
+    },
+    {
+      "course_id": "KubernetesHandsOn2",
+      "title": "kubernetes ハンズオン②",
+      "description": "kubernetesのクラスターにPodを作成し、動作確認します。"
     }
   ]
 }

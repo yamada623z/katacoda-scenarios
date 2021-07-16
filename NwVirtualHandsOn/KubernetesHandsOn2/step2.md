@@ -9,7 +9,7 @@
 
 ①rootにユーザを切り替えます。  
 
-\# `sudo -s`  
+$ `sudo -s`  
 
 ②dockerをインストールします。（ubuntuのリポジトリのものを使用します。）  
 
@@ -25,7 +25,7 @@
 
 ⑤「registry」のコンテナイメージをポート5000を指定して起動します。
 
-\# `docker run -dit -p 5000:5000 --name registry -e　REGISTRY_STORAGE_DELETE_ENABLED=true registry`
+\# `docker run -dit -p 5000:5000 --name registry -e　REGISTRY_STORAGE_DELETE_ENABLED=true registry`  
 <br>
 
 **<span style="color: red; ">【master/workerノードで実施】（Step1で実施しています）</span>**  
