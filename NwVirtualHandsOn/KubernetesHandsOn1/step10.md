@@ -23,7 +23,7 @@ $ `kubectl create secret generic kubernetes-dashboardcerts --from-file=$HOME/cer
 secret/kubernetes-dashboard-certs created
 ```  
 
-③ダッシュボードをPodとして、クラスターに実装します。  
+③ダッシュボードをPodとして、クラスターにインストールします。  
 $ `kubectl apply -f https://raw.githubusercontent.com/kubernetes/dashboard/v2.0.3/aio/deploy/recommended.yaml`{{execute HOST1}}  
 <br>
 

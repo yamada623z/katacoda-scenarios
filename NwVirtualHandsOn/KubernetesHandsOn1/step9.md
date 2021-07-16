@@ -13,7 +13,7 @@
 
 \# `kubectl apply -f https://raw.githubusercontent.com/google/metallb/v0.8.3/manifests/metallb.yaml`
 
-③ConfigMapファイル（設定を記述します）の作成します。  
+③ConfigMapリソースを記述したmanifestファイル（設定を記述します）の作成します。  
 
 \# `vi metallb_conf.yaml`
 ```yaml
@@ -32,7 +32,7 @@ data:
 ```  
 末尾の行は環境に沿った値で設定します。（開始IPアドレス-終了IPアドレス）  
 
-④ConfigMapファイルのインストールします。  
+④manifestファイルのインストールします。  
 
 \# `kubectl apply -f metallb_conf.yaml`  
 

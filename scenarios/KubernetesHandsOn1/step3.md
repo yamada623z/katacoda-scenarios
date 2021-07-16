@@ -41,7 +41,7 @@ xxxxxx.xxxxxxxxxxxxx --discovery-token-ca-cert-hash sha256:xxxxxxx
 ```  
 <br>
 
-②コマンドの出力で実施を促された「※1」を実施実施します。   
+②「kubeadm init」コマンドの出力で実施を促された部分を実施します。   
 
 $ `mkdir -p $HOME/.kube`{{execute HOST1}}  
 
