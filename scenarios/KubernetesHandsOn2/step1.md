@@ -37,7 +37,7 @@ $ `sudo -s`{{execute HOST1}}
 
 $ `sudo -s`{{execute HOST2}}  
 
-⑤「/etc/docker/daemon.json」の「"insecure-registries"」の行を編集します。（「xxx.xxx.xxx.xxx」はregistryノードのIPアドレスを指定します。※但し、本レッスンではmasterノードのIPアドレスを指定してください。）  
+⑤「/etc/docker/daemon.json」の「"insecure-registries"」の行を編集します。（「xxx.xxx.xxx.xxx」はregistryノードのIPアドレスを指定します。<span style="color: red; ">※但し、本レッスンではmasterノードのIPアドレスを指定してください。</span>）  
 
 \# `vi /etc/docker/daemon.json`{{execute HOST2}}  
 

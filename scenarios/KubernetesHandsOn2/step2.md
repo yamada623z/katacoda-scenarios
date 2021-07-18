@@ -9,11 +9,11 @@
 
 $ `sudo -s`{{execute HOST1}}  
 
-②dockerをインストールします。（ubuntuのリポジトリのものを使用します。）（本レッスンでは不要です。）  
+②dockerをインストールします。（ubuntuのリポジトリのものを使用します。）<span style="color: red; ">（本レッスンでは不要です。）</span>  
 
 \# `apt install docker.io`  
 
-③システム起動時に起動するように設定します。（本レッスンでは不要です。）  
+③システム起動時に起動するように設定します。<span style="color: red; ">（本レッスンでは不要です。）</span>  
 
 \# `systemctl enable docker`  
 

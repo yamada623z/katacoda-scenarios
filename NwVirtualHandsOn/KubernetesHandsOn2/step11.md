@@ -5,7 +5,7 @@
 $ `kubectl get pods`{{execute HOST1}}  
 
 ②kubectlコマンド利用してPodをスケールします。（数字の部分を変更します）  
-$ `kubectl --replicas=3 deployment.apps/nginx`{{execute HOST1}}  
+$ `kubectl scale --replicas=3 deployment.apps/nginx`{{execute HOST1}}  
 
 - 現在のPod数より増やすとスケールアウト（Pod数が増える。）  
 - 現在のPod数より減らすとスケールイン（Podの数が減る。）

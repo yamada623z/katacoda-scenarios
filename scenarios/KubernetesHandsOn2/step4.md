@@ -26,7 +26,7 @@ $ `vi Dockerfile`{{execute HOST1}}
 ```
 FROM nginx
 ADD default.conf /etc/nginx/conf.d
-```
+```{{copy}}
 $ `sudo docker build -t mynginx:1.0 .`{{execute HOST1}}  
 
 ⑤php-fpmのコンテナイメージを作成します。「Dockerfile」を作成して、コンテナイメージ「myphpfpm:1.0」を作成します。  
@@ -40,5 +40,5 @@ ADD php-fpm.conf /usr/local/etc/php-fpm.conf
 ADD php-fpm.d /usr/local/etc/php-fpm.d
 ADD index.php /var/www/html
 ADD test.php /var/www/html
-```
+```{{copy}}
 $ `sudo docker build -t myphpfpm:1.0 .`{{execute HOST1}}  
