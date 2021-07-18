@@ -12,7 +12,7 @@
  -e REGISTRY_URL=http://xxx.xxx.xxx.xxx:5000/v2\
  -e REGISTRY_NAME=xxx.xxx.xxx.xxx:5000\
  -e REGISTRY_READONLY=false\
- hyper/docker-registry-web:latest`{{copy}}   
+ hyper/docker-registry-web:latest`   
 
 ④ブラウザからアクセスする場合のURLは下記の通りです。  
 
