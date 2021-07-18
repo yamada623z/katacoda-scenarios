@@ -5,7 +5,7 @@
 Podの作成に必要なコンテナイメージをプライベートレジストリにpushします。
 <br>
 
-①コンテナイメージの名前を変更します。（「xxx.xxx.xxx.xxx」はregistryノードのIPアドレスを指定します）  
+①コンテナイメージの名前を変更します。（「xxx.xxx.xxx.xxx」はregistryノードのIPアドレスを指定します。<span style="color: red; ">但し、本レッスンではmasterノードのIPアドレスを指定します。</span>）  
 
 $ `docker tag mynginx:1.0 xxx.xxx.xxx.xxx:5000/mynginx:1.0`  
 $ `docker tag myphpfpm:1.0 xxx.xxx.xxx.xxx:5000/myphpfpm:1.0`  

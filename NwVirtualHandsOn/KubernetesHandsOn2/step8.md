@@ -3,6 +3,7 @@
 **<span style="color: red; ">【masterノードで実施（Terminal Host 1）】</span>**  
 
 Step6で作成したmanifestファイルで、kubernetesクラスターからPodを削除します。  
+<span style="color: red; ">※このステップを実施した場合は、Step7を再度、実施してください。</span>  
 
 ①下記のコマンドでkubernetesクラスターからPodを削除します。  
 

@@ -2,7 +2,7 @@
   "title": "kubernetesハンズオン①",
   "description": "kubernetesの環境を構築し、クラスタを構成します。",
   "difficulty": "Beginner",
-  "time": "2 hours",
+  "time": "1 hours",
   "details": {
     "steps": [
       {

@@ -9,7 +9,7 @@ $ `mkdir nginxphp/phpfpm`{{execute HOST1}}
 
 ②nginxのコンテナイメージ作成に必要なファイルを移動します。  
 
-$ mv `default.conf nginxphp/nginx`{{execute HOST1}}  
+$ `mv default.conf nginxphp/nginx`{{execute HOST1}}  
 
 ③php-fpmのコンテナイメージに必要なフォルダの作成し、ファイルを移動します。  
 

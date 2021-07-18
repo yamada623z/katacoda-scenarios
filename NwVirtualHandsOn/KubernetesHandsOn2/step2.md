@@ -3,35 +3,33 @@
 ※外部公開をしないデバッグ環境での利用の為、セキュリティ無しで構築します。  
 <br>
 
-<u>**<span style="color: red; ">※このステップは本レッスンでは実施しません。（予め構築されたプライベートレジストリを使用してください。）</span>**</u>  
-
-**<span style="color: red; ">【registryノードで実施】</span>**  
+**<span style="color: red; ">【registryノードで実施】※本レッスンではmasterノードで実施します。</span>**  
 
 ①rootにユーザを切り替えます。  
 
-$ `sudo -s`  
+$ `sudo -s`{{execute HOST1}}  
 
-②dockerをインストールします。（ubuntuのリポジトリのものを使用します。）  
+②dockerをインストールします。（ubuntuのリポジトリのものを使用します。）（本レッスンでは不要です。）  
 
 \# `apt install docker.io`  
 
-③システム起動時に起動するように設定します。  
+③システム起動時に起動するように設定します。（本レッスンでは不要です。）  
 
 \# `systemctl enable docker`  
 
 ④docker上で動作させる「registry」の最新のコンテナイメージをpullする。
 
-\# `docker pull registry`
+\# `docker pull registry`{{execute HOST1}}  
 
 ⑤「registry」のコンテナイメージをポート5000を指定して起動します。
 
-\# `docker run -dit -p 5000:5000 --name registry -e　REGISTRY_STORAGE_DELETE_ENABLED=true registry`  
+\# `docker run -dit -p 5000:5000 --name registry -e REGISTRY_STORAGE_DELETE_ENABLED=true registry`{{execute HOST1}}  
 <br>
 
 **<span style="color: red; ">【master/workerノードで実施】（Step1で実施しています）</span>**  
 
 ⑥「daemon.json」ファイルを生成し、「/etc/docker]
-に配置します。（「xxx.xxx.xxx.xxx」はregistryノードのIPアドレスを指定します）  
+に配置します。（「xxx.xxx.xxx.xxx」はregistryノードのIPアドレスを指定します。）  
 ```json
 {
   "insecure-registries" : [“xxx.xxx.xxx.xxx:5000"]
@@ -41,6 +39,10 @@ $ `sudo -s`
 ⑦dockerを再起動します。（「daemon.json」ファイルの反映）  
 
 \# `systemctl restart docker`  
+
+（一般ユーザに戻します）  
+
+\# `exit`{{execute HOST1}}  
 <br>
 
 ## 【プライベートレジストリの利用方法】  

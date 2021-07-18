@@ -2,23 +2,17 @@
   "title": "kubernetesハンズオン②",
   "description": "kubernetesの環境に静的WebサービスのPodを作成・動作確認を実施します。",
   "difficulty": "Beginner",
-  "time": "2 hours",
+  "time": "1 hours",
   "details": {
     "assets":{
       "host01":[
-        {"file":"daemon.json","target":"/root","chmod":"+rw"},
         {"file":"default.conf","target":"/root","chmod":"+rw"},
-        {"file":"Dockerfile","target":"/root","chmod":"+rw"},
-        {"file":"Dockerfile_mynginx","target":"/root","chmod":"+rw"},
-        {"file":"Dockerfile_myphpfpm","target":"/root","chmod":"+rw"},
         {"file":"index.php","target":"/root","chmod":"+rw"},
         {"file":"nginxphp_pod.yaml","target":"/root","chmod":"+rw"},
         {"file":"php.ini","target":"/root","chmod":"+rw"},
+        {"file":"php-fpm.conf","target":"/root","chmod":"+rw"},
         {"file":"test.php","target":"/root","chmod":"+rw"},
         {"file":"www.conf","target":"/root","chmod":"+rw"}
-      ],
-      "host2":[
-        {"file":"daemon.json","target":"/root","chmod":"+rw"}
       ]
     },
     "steps": [

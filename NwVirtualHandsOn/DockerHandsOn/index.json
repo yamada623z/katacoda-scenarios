@@ -2,7 +2,7 @@
   "title": "docker ハンズオン",
   "description": "dockerの環境を構築し、コンテナを作成・動作させます。",
   "difficulty": "Beginner",
-  "time": "2 hours",
+  "time": "1 hours",
   "details": {
     "steps": [
       {
