@@ -17,4 +17,12 @@
 - ユーザーが外部アドレス（xxx.xxx.xxx.xx:31001）にブラウザ等からアクセスするとサービス（nginx-service）を介して、nginxにアクセスします。  
     - ページが「\*.html」の場合はnginxで処理し、応答を返します。  
     - ページが「\*.php」の場合はnginxからphp-fpmに処理を依頼し、その応答をnginxからユーザに返します。  
+<br>
 
+## 【ノード構成】  
+
+![Pod Image](./assets/node.png)
+
+- 本来は、registryノードはKubernetesクラスターの外にあり、Pod生成時にコンテナイメージのpullリクエストを行います。  
+- 本レッスンでは、外部にregistryノードをデプロイすることが出来ないため、masterノードに間借りしてregistryコンテナを起動し構成します。   
+<span style="color: red; ">※手順において、本来、registryノードのIPアドレスを指定しなくてはいけない所にmasterノードのIPアドレスを設定しているため、注意してください。</span>  
