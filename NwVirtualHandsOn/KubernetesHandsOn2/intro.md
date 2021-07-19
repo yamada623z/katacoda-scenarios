@@ -21,7 +21,7 @@
 
 ## 【ノード構成】  
 
-![Node](./assets/node.png)
+![Node](./assets/Node.png)
 
 - 本来は、registryノードはKubernetesクラスターの外にあり、Pod生成時にコンテナイメージのpullリクエストを行います。  
 - 本レッスンでは、外部にregistryノードをデプロイすることが出来ないため、masterノードに間借りしてregistryコンテナを起動し構成します。   
