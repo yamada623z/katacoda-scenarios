@@ -6,7 +6,7 @@
   "details": {
     "assets":{
       "host01":[
-        {"file":"docker-compose-weavesock.yml","target":"/root","chmod":"+rw"}
+        {"file":"docker-compose-weavesock.yml","target":"/root","chmod":"+rw"},
         {"file":"prometheus.yml","target":"/root","chmod":"+rw"}
       ]
     },  
