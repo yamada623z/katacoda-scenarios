@@ -40,4 +40,4 @@ node_cpu
 次のStepの為に、コンテナを停止させます。  
 \# `docker stop prometheus-server`{{execute}}  
 \# `docker stop prometheus`{{execute}}  
-\# `docekr stop http-server`{{execute}}  
+\# `docker stop http-server`{{execute}}  
