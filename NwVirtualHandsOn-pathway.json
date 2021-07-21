@@ -19,7 +19,7 @@
     },
     {
       "course_id": "ObservableHandsOn",
-      "title": "可観測性と分析ハンズオン",
+      "title": "可観測性と分析 ハンズオン",
       "description": "dockerの環境でPrometheusとWaveScopeの動作を確認します。"
     }
   ]
