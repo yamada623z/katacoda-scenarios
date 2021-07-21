@@ -16,11 +16,6 @@
       "course_id": "KubernetesHandsOn2",
       "title": "kubernetes ハンズオン②",
       "description": "kubernetesのクラスターにPodを作成し、動作確認します。"
-    },
-    {
-      "course_id": "ObservableHandsOn",
-      "title": "可観測性と分析 ハンズオン",
-      "description": "dockerの環境でPrometheusとWaveScopeの動作を確認します。"
     }
   ]
 }
