@@ -1,6 +1,6 @@
 {
   "title": "可観測性と分析 ハンズオン",
-  "description": "dockerの環境でPrometheusとWaveScopeの動作を確認します。",
+  "description": "dockerの環境でPrometheusとWeaveScopeの動作を確認します。",
   "difficulty": "Beginner",
   "time": "1 hours",
   "details": {
