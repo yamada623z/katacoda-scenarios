@@ -12,7 +12,7 @@ $ `ifconfig`{{execute HOST1}}
 
 $ `sudo -s`{{execute HOST1}}  
 
-③「/etc/docker/daemon.json」の「"insecure-registries"」の行を編集します。（「xxx.xxx.xxx.xxx」はregistryノードのIPアドレスを指定します。<span style="color: red; ">※但し、本レッスンではmasterノードのIPアドレスを指定してください。</span>）  
+③「/etc/docker/daemon.json」の「"insecure-registries"」の行を編集します。（「xxx.xxx.xxx.xxx」はregistryノードのIPアドレスを指定します。<span style="color: red; ">※但し、本レッスンではmasterノードのIPアドレス（控えた「ens3」のIPアドレス）を指定してください。</span>）  
 
 \# `vi /etc/docker/daemon.json`{{execute HOST1}}  
 
@@ -37,7 +37,7 @@ $ `sudo -s`{{execute HOST1}}
 
 $ `sudo -s`{{execute HOST2}}  
 
-⑤「/etc/docker/daemon.json」の「"insecure-registries"」の行を編集します。（「xxx.xxx.xxx.xxx」はregistryノードのIPアドレスを指定します。<span style="color: red; ">※但し、本レッスンではmasterノードのIPアドレスを指定してください。</span>）  
+⑤「/etc/docker/daemon.json」の「"insecure-registries"」の行を編集します。（「xxx.xxx.xxx.xxx」はregistryノードのIPアドレスを指定します。<span style="color: red; ">※但し、本レッスンではmasterノードのIPアドレス（控えた「ens3」のIPアドレス）を指定してください。</span>）  
 
 \# `vi /etc/docker/daemon.json`{{execute HOST2}}  
 
@@ -91,3 +91,18 @@ $ `ls -la`{{execute HOST1}}
 -rw-r--r--  1 root root    37 Apr 27 02:09 test.php
 -rw-r--r--  1 root root   217 Apr 27 02:09 www.conf
 ```  
+（ファイルの説明）  
+default.conf：  
+nginxの設定ファイルです。httpの待ち受けポートやphpとのインタフェース、始めに検出するファイルの位置などが設定されています。  
+
+index.php：  
+phpファイルです。phpの情報を表示させます。  
+
+nginxphp_pod.yaml：  
+nginx＋phpを連携するようにPodを作成するためのmanifestファイルです。（Step6で説明します）  
+
+php-fpm.conf・php.ini・www.conf：  
+phpの動作に必要な設定ファイルです。  
+
+test.php：  
+phpファイルです。現在、アクセス中のプロセス（Pod）の名前を表示させます。  
