@@ -17,7 +17,7 @@ https://localhost:9090/graph
 
 たとえば、「engine_daemon_container_actions_seconds_sum」をクエリすると、実行されているDockerアクションの数が表示されます。これらのアクションは、開始、削除、作成、コミット、または変更されるコンテナです。 「node_cpu」を使用してクエリを実行すると、Docker Hosts CPU情報が出力されます。  
 
-- クエリに該当の言葉（「engine_daemon_container_actions_seconds_sum」等）を入力し、「Execute」→下部のタグ「Graph」をクリックする。  
+- クエリ（虫眼鏡マーク）に該当の言葉（「engine_daemon_container_actions_seconds_sum」等）を入力し、「Execute」→下部のタグ「Graph」をクリックする。  
 
 **（表示例）**  
 engine_daemon_container_actions_seconds_sum  

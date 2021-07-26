@@ -1,5 +1,5 @@
 # Dockerホストの視覚化  
-Scopeコンテナが起動すると、ポート4040でUIにアクセスできます。
+Weave Scopeコンテナが起動すると、ポート4040でUIにアクセスできます。
 
 https://localhost:4040
 
@@ -13,7 +13,7 @@ https://localhost:4040
 
 <br>
 
-新しいコンテナーが起動されると、Scopeはライブアーキテクチャを反映するように自動的に更新されます。
+新しいコンテナーが起動されると、Scopeはライブアーキテクチャ（リアルタイムな機能仕様）を反映するように自動的に更新されます。
 
 \# `docker run -d --link redis:redis katacoda/redis-node-docker-example`{{execute}}
 

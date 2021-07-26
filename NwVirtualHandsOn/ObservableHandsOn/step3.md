@@ -3,7 +3,9 @@ prometheusは、ポート9090で使用可能なUIを備えたdockerコンテナ�
 
 \# `docker run -d --net=host -v /root/prometheus.yml:/etc/prometheus/prometheus.yml --name prometheus-server prom/prometheus`{{execute}}  
 
-- コマンドは、prometheus構成でコンテナを起動します。 prometheusによって作成されたデータはすべて、ホストのディレクトリ/prometheus/dataに保存されます。そのため、コンテナを更新しても、データは保持されます。  
+- コマンドは、prometheusを設定の通りにコンテナを起動します。「-v」（ファイルのマウント）ではStep2で作成したprometheusのコンフィグファイルを指定しています。   
+
+- 「--net」では、コンテナがどのNetwork を使用するかを指定しています。
 
 - prometheusを起動すると、ダッシュボードはポート9090で表示できます。  
 <br>

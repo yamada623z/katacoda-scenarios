@@ -17,7 +17,7 @@ https://localhost:9090/graph
 
 たとえば、「node_network_receive_bytes」をクエリすると、ディスクIOがどの程度アクティブであるかがわかります。 「node_cpu」を使用してクエリを実行すると、Docker Hosts CPU情報が出力されます。  
 
-- クエリに該当の言葉（ 「node_network_receive_bytes」等）を入力し、「Execute」→下部のタグ「Graph」をクリックする。
+- クエリ（虫眼鏡マーク）に該当の言葉（「node_network_receive_bytes」等）を入力し、「Execute」→下部のタグ「Graph」をクリックする。
 
 **（表示例）**  
 node_network_receive_bytes  
