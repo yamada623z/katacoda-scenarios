@@ -1,8 +1,7 @@
 # kubernetesクラスターへのpodの作成
-
-**<span style="color: red; ">【masterノードで実施（Terminal Host 1）】</span>**  
-
 Step6で作成したmanifestファイルで、kubernetesクラスターへPodを作成します。  
+<br>
+**<span style="color: red; ">【masterノードで実施（Terminal Host 1）】</span>**  
 
 ①下記のコマンドでkubernetesクラスターへPodを作成します。  
 
