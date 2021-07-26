@@ -1,4 +1,6 @@
 # スケーリング（manifestファイル利用）の動作確認
+manifestファイルを利用してPodのスケーリング（サービスを継続したままでのPod数の増減）の操作確認を実施します。    
+
 **<span style="color: red; ">【masterノードで実施（Terminal Host 1）】</span>**  
 
 ①現在のPodの状態を確認する。  
@@ -16,7 +18,6 @@ $ `kubectl apply -f nginxphp_pod.yaml`{{execute HOST1}}
 
 ④ブラウザをリロードして、サービスが継続していることを確認します。  
 
-⑤下記のコマンドでPodの状態を確認する。  
+⑤下記のコマンドでPodの状態を確認する。（Pod数が②で指定した数であることを確認します）  
 $ `kubectl get pods`{{execute HOST1}}  
-<br>
 

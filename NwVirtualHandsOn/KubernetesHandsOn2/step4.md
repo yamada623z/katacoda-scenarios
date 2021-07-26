@@ -1,4 +1,7 @@
 # コンテナイメージの作成  
+Pod作成に必要な二つのコンテナイメージを作成します。  
+<br>  
+
 **<span style="color: red; ">【masterノードで実施（Terminal Host 1）】</span>**  
 
 ①Topフォルダ（nginxphp）と作成するコンテナイメージ毎（nginx,php-fpm）にフォルダを作成します。  

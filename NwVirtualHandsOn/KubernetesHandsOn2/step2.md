@@ -46,6 +46,8 @@ $ `sudo -s`{{execute HOST1}}
 <br>
 
 ## 【プライベートレジストリの利用方法】  
+<span style="color: red; ">（Step5で実際に利用します。ここでは、利用方法を覚えてください。）</span>　　
+
 ※例として、作成するコンテナイメージを「mynginx:1.0」、registryノードのIPアドレスを「xxx.xxx.xxx.xxx」とします。
 
 ①コンテナイメージを作成します。  

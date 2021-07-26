@@ -4,7 +4,7 @@
 
 Podを作成するためにmanifestファイル（nginxphp_pod.yaml）を作成し、Podを作成します。
 
-①manifestファイル（nginxphp_pod.yaml）を編集します。  
+①manifestファイル（nginxphp_pod.yaml）のコンテナイメージ名（二箇所）を編集します。（「xxx.xxx.xxx.xxx」はregistryノードのIPアドレスを指定します。<span style="color: red; ">但し、本レッスンではmasterノードのIPアドレス（控えた「ens3」のIPアドレス）を指定します。</span>）   
 
 $ `cd`{{execute HOST1}}  
 $ `vi nginxphp_pod.yaml`{{execute HOST1}}  
