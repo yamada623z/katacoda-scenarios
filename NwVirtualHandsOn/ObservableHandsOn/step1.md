@@ -12,4 +12,4 @@ $ `sudo -s`{{execute}}
 
 ③システム起動時に起動するように設定する。
 
-\# `systemctl docker`
+\# `systemctl enable docker`
