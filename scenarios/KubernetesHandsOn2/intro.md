@@ -2,7 +2,7 @@
 ## 【Pod（アプリケーション）作成】  
 - kubernetes上に静的WebサービスのPodを作成する。  
 - Podの動作確認を実施する。  
-- kubernetesの動作確認を実施する。（セルフヒーリング、ロードバランス）   
+- kubernetesの動作確認を実施する。（スケール、セルフヒーリング）   
 
 <span style="color: red; ">※Katacoda利用のハンズオンの場合、必ずブラウザはChromeを使用すること。</span>  
 <br>
