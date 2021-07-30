@@ -4,6 +4,11 @@
   "difficulty": "Beginner",
   "time": "1 hours",
   "details": {
+    "assets":{
+      "host01":[
+        {"file":"service-account.yaml","target":"/root","chmod":"+rw"}
+      ]
+    },
     "steps": [
       {
         "title": "Step 1",
@@ -52,6 +57,10 @@
       {
         "title": "Step 12",
         "text": "step12.md"
+      },
+      {
+        "title": "Step 13",
+        "text": "step13.md"
       }
     ],
     "intro": {
