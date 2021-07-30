@@ -43,3 +43,5 @@ kubernetes-dashboard  kubernetes-dashboard    NodePort    yyy.yyy.yyy.yyy  <none
 ②表示されるドロップリストから「**Select port to view on Host 1**」をクリックします。  
 ③ボックスに「**32002**」を入力し、「**Display Port**」をクリックします。  
 
+**（表示例）**  
+![DashBoard Image](./assets/Step11.png)  

@@ -4,6 +4,7 @@
 サービスアカウントを作成し、「**admin-user**」権限でログインします。  
 
 ①下記のmanifestファイルを用意する。  
+$ `cd`{{execute HOST1}}  
 $ `vi service-account.yaml`{{execute HOST1}}  
 ```yaml
 apiVersion: v1
@@ -39,18 +40,23 @@ token 3 40m
 $ `kubectl -n kube-system describe secret admin-user-token-xxxxx`  
 **（表示例）**
 ```
-Name: admin-user-token-xxxxx
-Namespace: kube-system
-Labels: <none>
-Annotations: kubernetes.io/service-account.name=admin-user
-kubernetes.io/service-account.uid=bde9a663-3429-11e8-92ba-42010a92006a
-Type: kubernetes.io/service-account-token
+Name:         admin-user-token-xxxxx
+Namespace:    kube-system
+Labels:       <none>
+Annotations:  kubernetes.io/service-account.name: admin-user
+              kubernetes.io/service-account.uid: xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx
+
+Type:  kubernetes.io/service-account-token
+
 Data
 ====
-ca.crt: 1115 bytes
-namespace: 11 bytes
+ca.crt:     1025 bytes
+namespace:  11 bytes
 token: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
 ```  
 ③上記の「**token:**」以降の文字列（xxxxの部分）をマウスで選択し、コピーします。   
 ④現在、ダッシュボードに表示されている「Kubernetes Dashboard」のウインドウ上のラジオボタン「**トークン**」をチェックし、下段の「**トークンを入力**」に②でコピーした文字列をペーストして「**サインイン**」ボタンをクリックします。  
+
+**（表示例）**  
+![DashBoard Image](./assets/Step13.png)  
 

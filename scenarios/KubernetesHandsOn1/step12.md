@@ -13,12 +13,14 @@ deployment-controller-token-xxxxx   kubernetes.io/service-account-token 3       
 $ `kubectl -n kube-system describe secret deployment-controller-token-xxxxx`  
 **（表示例）**
 ```
-Name: deployment-controller-token-xxxxx
-Namespace: kube-system
-Labels: <none>
-Annotations: kubernetes.io/service-account.name=deployment-controller
-kubernetes.io/service-account.uid=bde9a663-3429-11e8-92ba-42010a92006a
-Type: kubernetes.io/service-account-token
+Name:         deployment-controller-token-xxxxx
+Namespace:    kube-system
+Labels:       <none>
+Annotations:  kubernetes.io/service-account.name: deployment-controller
+              kubernetes.io/service-account.uid: xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx
+
+Type:  kubernetes.io/service-account-token
+
 Data
 ====
 ca.crt: 1115 bytes
@@ -27,4 +29,7 @@ token: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
 ```  
 ③上記の「**token:**」以降の文字列（xxxxの部分）をマウスで選択し、コピーします。   
 ④現在、ダッシュボードに表示されている「Kubernetes Dashboard」のウインドウ上のラジオボタン「**トークン**」をチェックし、下段の「**トークンを入力**」に②でコピーした文字列をペーストして「**サインイン**」ボタンをクリックします。  
+
+**（表示例）**  
+![DashBoard Image](./assets/Step12.png)  
 
