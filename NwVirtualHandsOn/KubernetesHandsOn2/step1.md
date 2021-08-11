@@ -22,7 +22,7 @@ $ `sudo -s`{{execute HOST1}}
 }
 ```  
 
-④dockerを再起動します。（「daemon.json」ファイルの反映）  
+⑤dockerを再起動します。（「daemon.json」ファイルの反映）  
 
 \# `systemctl restart docker`{{execute HOST1}}  
 
@@ -33,11 +33,11 @@ $ `sudo -s`{{execute HOST1}}
 
 **<span style="color: red; ">【workerノードで実施（Terminal Host 2）】</span>**  
 
-④rootにユーザを切り替えます。  
+⑥rootにユーザを切り替えます。  
 
 $ `sudo -s`{{execute HOST2}}  
 
-⑤「/etc/docker/daemon.json」の「"insecure-registries"」の行を編集します。（「xxx.xxx.xxx.xxx」はregistryノードのIPアドレスを指定します。<span style="color: red; ">※但し、本レッスンではmasterノードのIPアドレス（控えた「ens3」のIPアドレス）を指定してください。</span>）  
+⑦「/etc/docker/daemon.json」の「"insecure-registries"」の行を編集します。（「xxx.xxx.xxx.xxx」はregistryノードのIPアドレスを指定します。<span style="color: red; ">※但し、本レッスンではmasterノードのIPアドレス（控えた「ens3」のIPアドレス）を指定してください。</span>）  
 
 \# `vi /etc/docker/daemon.json`{{execute HOST2}}  
 
@@ -47,7 +47,7 @@ $ `sudo -s`{{execute HOST2}}
 }
 ```  
 
-⑥dockerを再起動します。（「daemon.json」ファイルの反映）  
+⑧dockerを再起動します。（「daemon.json」ファイルの反映）  
 
 \# `systemctl restart docker`{{execute HOST2}}  
 
@@ -58,12 +58,12 @@ $ `sudo -s`{{execute HOST2}}
 
 **<span style="color: red; ">【masterノードで実施（Terminal Host 1）】</span>**  
 
-⑦「launch.sh」を実行してください。  
+⑨「launch.sh」を実行してください。  
 
 $ `launch.sh`{{execute HOST1}}  
 <br>
 
-⑧ノード状態を確認し、クラスターの正常性を確認します。  
+⑩ノード状態を確認し、クラスターの正常性を確認します。  
 
 $ `kubectl get nodes`{{execute HOST1}}  
 
@@ -75,7 +75,7 @@ controlplane   Ready    master   84s   v1.18.0
 node01         Ready    <none>   24s   v1.18.0
 ```
 
-⑨ハンズオンに必要なファイルはカレントのフォルダにあります。確認してください。  
+⑪ハンズオンに必要なファイルはカレントのフォルダにあります。確認してください。  
 
 **<span style="color: red; ">【masterノードで実施（Terminal Host 1）】</span>**  
 

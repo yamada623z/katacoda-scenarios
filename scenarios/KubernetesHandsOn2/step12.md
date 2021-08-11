@@ -11,7 +11,7 @@ $ `kubectl delete pods nginx-xxxxxxxx-xxxx`
 
 - ①のコマンドで表示されたPod名（nginx-xxxxxxxx-xxxx）を指定する。  
 
-②ブラウザをリロードして、サービスが継続していることを確認します。  
+③ブラウザをリロードして、サービスが継続していることを確認します。  
 
 ④下記のコマンドでPodの状態を確認する。  
 $ `kubectl get pods`{{execute HOST1}}  
