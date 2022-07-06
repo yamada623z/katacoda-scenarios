@@ -42,7 +42,6 @@ kubernetes-dashboard  kubernetes-dashboard    NodePort    yyy.yyy.yyy.yyy  <none
 ①ターミナルペインの「**Tab1**」「**＋**」のタグの並びの一番左にある「**三**」をクリックする。  
 ②表示されるドロップリストから「**Traffic / Ports**」をクリックする。
 ③新しいブラウザタブ「**Traffic Port Accessor**」が表示されたら、「**Custom Ports**」の下のボックスに「**32002**」を入力し、「**Access**」をクリックします。  
-[click here]({{TRAFFIC_HOST1_32002}})
 
 **（表示例）**  
 ![DashBoard Image](./assets/Step11.png)  
