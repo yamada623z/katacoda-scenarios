@@ -1,5 +1,5 @@
 # 環境設定とdockerのインストール（workerノード）  
-<u>**<span style="color: red; ">※このステップは本レッスンでは必要ありません。</span>**</u>
+<u>**<span style="color: red; ">※このステップは本レッスンでは必要ありません。</span>**</u>  
 
 本レッスンでは必要ありませんが、Kubernetesクラスター環境を動作させる実workerノードでは下記の手順（①~⑨）で**kubeadm**をインストール必要があります。
 
