@@ -7,4 +7,4 @@
 - コンテナの各種情報確認を行う。  
 - dockerによりコンテナを作成する。（Dockerfileによるデプロイ）  
 <br>
-<span style="color: red; ">※Katacoda利用のハンズオンの場合、必ずブラウザはChromeを使用すること。</span>  
+<span style="color: red; ">※Killercoda利用のハンズオンの場合、必ずブラウザはChromeを使用すること。</span>  
