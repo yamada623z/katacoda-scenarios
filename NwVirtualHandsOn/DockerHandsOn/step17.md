@@ -8,6 +8,7 @@ $ `curl localhost:80`{{execute}}
 <h1>Hello World</h1>
 ```
 
-**KatacodaのWebアクセス方法：**  
-①ターミナルペインの「**Terminal**」のタグの隣の「**＋**」をクリックする。  
-②表示されるドロップリストから「**View HTTP port 80 on Host 1**」をクリックする。
+**KillercodaのWebアクセス方法：**  
+①ターミナルペインの「**Tab1**」「**＋**」のタグの並びの一番左にある「**三**」をクリックする。  
+②表示されるドロップリストから「**Traffic / Ports**」をクリックする。
+③新しいブラウザタブ「**Traffic Port Accessor**」が表示されたら、「**Host 1 Common Ports**」の下の「**80**」をクリックする。
