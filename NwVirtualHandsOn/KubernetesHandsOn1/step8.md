@@ -1,9 +1,9 @@
 # クラスターのノード状態の確認（kubectl get nodes）
-**<span style="color: red; ">【masterノードで実施（Terminal Host 1）】</span>**  
+**<span style="color: red; ">【masterノード（controlplane）で実施】</span>**  
 
 ①ノード状態を確認し、クラスターの正常性を確認します。  
 
-$ `kubectl get nodes`{{execute HOST1}}  
+$ `kubectl get nodes`{{execute}}  
 
 **（表示例）**  
 ```  

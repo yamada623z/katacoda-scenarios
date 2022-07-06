@@ -1,10 +1,10 @@
 # ダッシュボードの認証方法
-**<span style="color: red; ">【masterノードで実施（Terminal Host 1）】</span>**  
+**<span style="color: red; ">【masterノード（controlplane）で実施】</span>**  
 
 ダッシュボードをtokenで認証し、ログインします。  
 
 ①権限は細かく分かれており、デフォルトで色々な種類があります。「**kubectl**」コマンドを使用して「**deployment-controller**」権限でログインを試みます。  
-$ `kubectl -n kube-system get secret | grep deployment-controller-token`{{execute HOST1}}  
+$ `kubectl -n kube-system get secret | grep deployment-controller-token`{{execute}}  
 **（表示例）**
 ```
 deployment-controller-token-xxxxx   kubernetes.io/service-account-token 3       45m

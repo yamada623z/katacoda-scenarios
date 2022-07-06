@@ -1,11 +1,11 @@
 # サービスアカウントの作成
-**<span style="color: red; ">【masterノードで実施（Terminal Host 1）】</span>**  
+**<span style="color: red; ">【masterノード（controlplane）で実施】</span>**  
 
 サービスアカウントを作成し、「**admin-user**」権限でログインします。（全ての操作、表示が可能となります。）  
 
 ①下記のmanifestファイルを用意する。  
 $ `cd`{{execute HOST1}}  
-$ `vi service-account.yaml`{{execute HOST1}}  
+$ `vi service-account.yaml`{{execute}}  
 ```yaml
 apiVersion: v1
 kind: ServiceAccount
@@ -27,10 +27,10 @@ subjects:
   namespace: kube-system
 ```
 ②作成したmanifestファイルをデプロイします。  
-$ `kubectl apply -f service-account.yaml`{{execute HOST1}}  
+$ `kubectl apply -f service-account.yaml`{{execute}}  
 
 ③下記のコマンドで、「admin-user-token-xxxxx」の生成を確認します。  
-$ `kubectl -n kube-system get secret | grep admin-user-token`{{execute HOST1}}  
+$ `kubectl -n kube-system get secret | grep admin-user-token`{{execute}}  
 **（表示例）**
 ```
 admin-user-token-xxxxx kubernetes.io/serviceaccount-

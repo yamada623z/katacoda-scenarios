@@ -1,10 +1,10 @@
 # ダッシュボードの外部ノードからアクセス
-**<span style="color: red; ">【masterノードで実施（Terminal Host 1）】</span>**  
+**<span style="color: red; ">【masterノード（controlplane）で実施】</span>**  
 
 masterノードのポートを使用して、外部ノードからアクセス出来るようにします。  
 
 ①Podの状態からダッシュボードのみを表示します。  
-$ `kubectl get pods --all-namespaces | grep dashboard`{{execute HOST1}}  
+$ `kubectl get pods --all-namespaces | grep dashboard`{{execute}}  
 <br>
 
 ②ダッシュボードの定義ファイルを編集します。  
@@ -26,7 +26,7 @@ spec:
 ```  
 ③サービスの状態を取得し、確認します。  
 
-$ `kubectl get svc --all-namespaces`{{execute HOST1}}  
+$ `kubectl get svc --all-namespaces`{{execute}}  
 
 **（表示例）**
 ```

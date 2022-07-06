@@ -7,13 +7,13 @@
 
 ①ホスト名の変更します。<span style="color: red; ">（※”_”,”-”はホスト名に使えないので注意です。）</span>  
 
-$ `sudo hostnamectl set-hostname worker1`  
+$ `sudo hostnamectl set-hostname node01`  
 
 ②/etc/hostsファイルの変更します。
 
 $ `sudo vi /etc/hosts`  
 ```
-127.0.0.1   localhost   worker1
+127.0.0.1   localhost   node01
 ```
 
 ③rootにユーザを切り替えます。  

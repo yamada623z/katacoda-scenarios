@@ -1,8 +1,8 @@
 # ＜今回の目標＞
 ## 【基盤構築】  
-- kubernetesの環境（masterノード）を構築する。  
+- kubernetesの環境（masterノード（controlplane））を構築する。  
 - workerノードを1台作成し、 kubernetesの環境（クラスタ）に追加する。  
-- kubernetesの環境（masterノード）にダッシュボードを実装する。  
+- kubernetesの環境（masterノード（controlplane））にダッシュボードを実装する。  
 
 <span style="color: red; ">※Killercoda利用のハンズオンの場合、必ずブラウザはChromeを使用すること。</span>  
 <br>

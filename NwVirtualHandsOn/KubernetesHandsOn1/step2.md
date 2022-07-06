@@ -1,7 +1,7 @@
-# kubeadmのインストール（masterノード）  
+# kubeadmのインストール（masterノード（controlplane））  
 <u>**<span style="color: red; ">※このステップは本レッスンでは必要ありません。</span>**</u>  
 
-**<span style="color: red; ">【masterノードで実施】</span>**  
+**<span style="color: red; ">【masterノード（controlplane）で実施】</span>**  
 
 ⑥apt-transport-httpsのインストールは念のため実施します。  
 

@@ -1,22 +1,22 @@
 # ダッシュボードの実装とアクセス
-**<span style="color: red; ">【masterノードで実施（Terminal Host 1）】</span>**  
+**<span style="color: red; ">【masterノード（controlplane）で実施】</span>**  
 
 ①下記の手順でダッシュボードへのアクセスの為の証明書を作成します。  
 
-$ `mkdir $HOME/certs`{{execute HOST1}}  
+$ `mkdir $HOME/certs`{{execute}}  
 
-$ `cd $HOME/certs`{{execute HOST1}}  
+$ `cd $HOME/certs`{{execute}}  
 
-$ `openssl genrsa 2048 > dashboard.key`{{execute HOST1}}  
+$ `openssl genrsa 2048 > dashboard.key`{{execute}}  
 
-$ `openssl req -new -key dashboard.key > dashboard.csr`{{execute HOST1}}  
+$ `openssl req -new -key dashboard.key > dashboard.csr`{{execute}}  
 （「Country Name」のみ「JP」を入力し、その後はEnterキーで何も入れません。）
 
-$ `openssl x509 -days 3650 -req -signkey dashboard.key < dashboard.csr > dashboard.crt`{{execute HOST1}}  
+$ `openssl x509 -days 3650 -req -signkey dashboard.key < dashboard.csr > dashboard.crt`{{execute}}  
 
 ②作成した証明書からsecretを作ります。  
 
-$ `kubectl create secret generic kubernetes-dashboardcerts --from-file=$HOME/certs -n kube-system`{{execute HOST1}}  
+$ `kubectl create secret generic kubernetes-dashboardcerts --from-file=$HOME/certs -n kube-system`{{execute}}  
 
 **（表示例）**  
 ```
@@ -24,12 +24,12 @@ secret/kubernetes-dashboard-certs created
 ```  
 
 ③ダッシュボードをPodとして、クラスターにインストールします。  
-$ `kubectl apply -f https://raw.githubusercontent.com/kubernetes/dashboard/v2.0.3/aio/deploy/recommended.yaml`{{execute HOST1}}  
+$ `kubectl apply -f https://raw.githubusercontent.com/kubernetes/dashboard/v2.0.3/aio/deploy/recommended.yaml`{{execute}}  
 <br>
 
 ④クラスターの状況を確認します。  
 
-$ `kubectl cluster-info`{{execute HOST1}}  
+$ `kubectl cluster-info`{{execute}}  
 **（表示）**  
 ```
 Kubernetes master is running at https://xxx.xxx.xxx.xxx:6443
