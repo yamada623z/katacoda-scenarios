@@ -74,6 +74,6 @@
     "uilayout": "terminal-terminal"
   },
   "backend": {
-    "imageid": "kubernetes-cluster:1.18"
+    "imageid": "kubernetes-kubeadm-1node"
   }
 }
