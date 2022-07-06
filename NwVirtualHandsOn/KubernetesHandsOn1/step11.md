@@ -38,10 +38,10 @@ kubernetes-dashboard  kubernetes-dashboard    NodePort    yyy.yyy.yyy.yyy  <none
 `https://xxx.xxx.xxx.xxx:32002`  
 <br>
 
-**KatacodaのWebアクセス方法：**  
-①ターミナルペインの「**Terminal Host 1**」のタグの隣の「**＋**」をクリックします。  
-②表示されるドロップリストから「**Select port to view on Host 1**」をクリックします。  
-③ボックスに「**32002**」を入力し、「**Display Port**」をクリックします。  
+**KillercodaのWebアクセス方法：**  
+①ターミナルペインの「**Tab1**」「**＋**」のタグの並びの一番左にある「**三**」をクリックする。  
+②表示されるドロップリストから「**Traffic / Ports**」をクリックする。
+③新しいブラウザタブ「**Traffic Port Accessor**」が表示されたら、「**Custom Ports**」の下のボックスに「**32002**」を入力し、「**Access**」をクリックします。  
 
 **（表示例）**  
 ![DashBoard Image](./assets/Step11.png)  
