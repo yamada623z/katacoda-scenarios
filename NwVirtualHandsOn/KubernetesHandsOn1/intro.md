@@ -4,7 +4,7 @@
 - workerノードを1台作成し、 kubernetesの環境（クラスタ）に追加する。  
 - kubernetesの環境（masterノード）にダッシュボードを実装する。  
 
-<span style="color: red; ">※Katacoda利用のハンズオンの場合、必ずブラウザはChromeを使用すること。</span>  
+<span style="color: red; ">※Killercoda利用のハンズオンの場合、必ずブラウザはChromeを使用すること。</span>  
 <br>
 
 ## 【必要条件】
