@@ -1,10 +1,10 @@
-# クラスターの生成（kubeadm init）
-**<span style="color: red; ">【masterノード（controlplane）で実施】</span>**  
+# クラスターの生成（kubeadm init）（masterノード（controlplane））  
+<u>**<span style="color: red; ">※このステップは本レッスンでは必要ありません。</span>**</u>  
 
 ①kubernetesの構築を行います。
 （使用するCNIによって「--pod-network-cidr」の指定が必要です。）  
 
-$ `kubeadm init`{{execute}}  
+$ `kubeadm init`  
 
 **（以下はkubeadm init実行後の表示例）**
 ```
@@ -43,9 +43,9 @@ xxxxxx.xxxxxxxxxxxxx --discovery-token-ca-cert-hash sha256:xxxxxxx
 
 ②「kubeadm init」コマンドの出力で実施を促された部分を実施します。   
 
-$ `mkdir -p $HOME/.kube`{{execute}}  
+$ `mkdir -p $HOME/.kube`  
 
-$ `sudo cp -i /etc/kubernetes/admin.conf $HOME/.kube/config`{{execute}}  
+$ `sudo cp -i /etc/kubernetes/admin.conf $HOME/.kube/config`  
 
-$ `sudo chown $(id -u):$(id -g) $HOME/.kube/config`{{execute}}  
+$ `sudo chown $(id -u):$(id -g) $HOME/.kube/config`  
 
